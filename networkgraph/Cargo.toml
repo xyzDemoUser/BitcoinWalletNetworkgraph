@@ -1,0 +1,20 @@
+[package]
+name = "BitcoinWalletNetworkgraph"
+version = "0.1.0"
+edition = "2021"
+authors = ["xyz Demo User<n111364161+xyzDemoUser@users.noreply.github.com >"]
+license = "MIT"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+www = { path = "../www" }
+coinbase-pro-rs = "0.7.1"
+openssl = { version = "0.10", features = ["vendored"] }
+warp = "0.3.2"
+parking_lot = "0.12.1"
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1.20.1", features = ["macros"] }
+json = "0.12.4"
+bitcoincore-rpc = "0.15.0"
+bitcoincore-rpc-json = "0.15.0"
+bytes = "1.2.1"
